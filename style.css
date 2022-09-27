@@ -1,0 +1,70 @@
+html {
+  background: #018ded
+    url(https://media.istockphoto.com/vectors/bright-rainbow-color-abstract-polygonal-background-vector-id1247972349?k=20&m=1247972349&s=170667a&w=0&h=MzT6EzOQNp2VTzRkzdvQP-Rs38SEcuW9TXBlPrJFv64=);
+  background-size: cover;
+  font-family: "helvetica neue";
+  text-align: center;
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  font-size: 2rem;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.clock {
+  width: 35rem;
+  height: 35rem;
+  border: 30px solid white;
+  border-radius: 50%;
+  margin: 50px auto;
+  position: relative;
+  padding: 2rem;
+  box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 0 10px #efefef,
+    inset 0 0 200px rgba(0, 0, 0, 0.2), 0 0 40px rgba(0, 0, 0);
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px); /* account for the height of the clock hands */
+}
+
+.hand-hour-hand {
+  position: relative;
+  left: 69px;
+  width: 30%;
+  height: 2.1rem;
+  background: rgba(0, 0, 0);
+  position: absolute;
+  top: 48.25%;
+  transform-origin: 100%;
+  transform: rotate(90deg);}
+
+.hand-min-hand {
+  position: relative;
+  left: 13.5px;
+
+  width: 46%;
+  height: 1.5rem;
+  background: rgba(0, 0, 0, 0.85);
+  position: absolute;
+  top: 49.1%;
+  transform-origin: 100%;
+  transform: rotate(90deg);}
+
+.hand-second-hand {
+  width: 50%;
+  height: 0.9rem;
+  background: rgba(0, 0, 0, 0.78);
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s; 
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1) ;
+}
